@@ -62,7 +62,8 @@ const emptyState = (): SnowflakeAppState => {
     name: "",
     title: "",
     milestoneByTrack: {
-      MOBILE: 0,
+      // MOBILE: 0,
+      ML: 0,
       WEB_CLIENT: 0,
       FOUNDATIONS: 0,
       SERVERS: 0,
@@ -79,7 +80,7 @@ const emptyState = (): SnowflakeAppState => {
       RECRUITING: 0,
       COMMUNITY: 0,
     },
-    focusedTrackId: "MOBILE",
+    focusedTrackId: "ML",
   };
 };
 
@@ -88,7 +89,7 @@ const defaultState = (): SnowflakeAppState => {
     name: "Julie Wu",
     title: "Sr Software Engineer",
     milestoneByTrack: {
-      MOBILE: 1,
+      ML: 1,
       WEB_CLIENT: 2,
       FOUNDATIONS: 3,
       SERVERS: 2,
@@ -105,7 +106,7 @@ const defaultState = (): SnowflakeAppState => {
       RECRUITING: 3,
       COMMUNITY: 0,
     },
-    focusedTrackId: "MOBILE",
+    focusedTrackId: "ML",
   };
 };
 

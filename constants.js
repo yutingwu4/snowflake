@@ -1,14 +1,15 @@
 // @flow
 import * as d3 from 'd3'
 
-export type TrackId = 'MOBILE' | 'WEB_CLIENT' | 'FOUNDATIONS' | 'SERVERS' |
+export type TrackId = 'ML' | 'WEB_CLIENT' | 'FOUNDATIONS' | 'SERVERS' |
   'PROJECT_MANAGEMENT' | 'COMMUNICATION' | 'CRAFT' | 'INITIATIVE' |
   'CAREER_DEVELOPMENT' | 'ORG_DESIGN' | 'WELLBEING' | 'ACCOMPLISHMENT' |
   'MENTORSHIP' | 'EVANGELISM' | 'RECRUITING' | 'COMMUNITY'
 export type Milestone = 0 | 1 | 2 | 3 | 4 | 5
 
 export type MilestoneMap = {
-  'MOBILE': Milestone,
+  // 'MOBILE': Milestone,
+  'ML': Milestone,
   'WEB_CLIENT': Milestone,
   'FOUNDATIONS': Milestone,
   'SERVERS': Milestone,
@@ -71,7 +72,8 @@ export type Track = {
 }
 
 type Tracks = {|
-  'MOBILE': Track,
+  // 'MOBILE': Track,
+  'ML': Track,
   'WEB_CLIENT': Track,
   'FOUNDATIONS': Track,
   'SERVERS': Track,
@@ -90,69 +92,135 @@ type Tracks = {|
 |}
 
 export const tracks: Tracks = {
-  "MOBILE": {
-    "displayName": "Mobile",
+  // "MOBILE": {
+  //   "displayName": "Mobile",
+  //   "category": "A",
+  //   "description": "Develops expertise in native mobile platform engineering, such as iOS or Android",
+  //   "milestones": [{
+  //     "summary": "Works effectively within established iOS or Android architectures, following current best practices",
+  //     "signals": [
+  //       "Delivers features requiring simple local modifications",
+  //       "Adds simple actions that call server endpoints",
+  //       "Reuses existing components appropriately",
+  //     ],
+  //     "examples": [
+  //       "Added existing button to a different iOS surface",
+  //       "Add follow button for publications on Android",
+  //       "Fetched and displayed a new stream, using existing stream item styles",
+  //     ],
+  //   }, {
+  //     "summary": "Develops new instances of existing architecture, or minor improvements to existing architecture",
+  //     "signals": [
+  //       "Defines new useful and appropriate proto-generated objects",
+  //       "Creates simple new activities on Android",
+  //       "Migrates code from old patterns to new patterns",
+  //     ],
+  //     "examples": [
+  //       "Upgraded SDWebImage to a new major version",
+  //       "Added support for rendering a new type of stream item",
+  //       "Prototyped a simple new feature quickly",
+  //     ],
+  //   }, {
+  //     "summary": "Designs major new features and demonstrates a nuanced understanding of mobile platform constraints",
+  //     "signals": [
+  //       "Implements complex features with a large product surface area",
+  //       "Works effectively with  Android reactive programming framework",
+  //       "Adds support for new iOS features after a major iOS version upgrade",
+  //     ],
+  //     "examples": [
+  //       "Designed iOS caching strategy for offline reading",
+  //       "Built series reader on Android",
+  //       "Informed the team about recent best practice changes and deprecations",
+  //     ],
+  //   }, {
+  //     "summary": "Builds complex, reusable architectures that pioneer best practices and enable engineers to work more effectively",
+  //     "signals": [
+  //       "Pioneers architecture migration strategies that reduce programmer burden",
+  //       "Fixes subtle memory management issues",
+  //       "Implements interactive dismissals that bring delight",
+  //     ],
+  //     "examples": [
+  //       "Upgraded CocoaPods to a new major version",
+  //       "Designed architecture for fetching and rendering stream items",
+  //       "Migrated Android persistance layer to reactive programming",
+  //     ],
+  //   }, {
+  //     "summary": "Is an industry-leading expert in mobile engineering or sets strategic mobile direction for an eng team",
+  //     "signals": [
+  //       "Defines long-term goals and ensures active projects are in service of them",
+  //       "Designs and builds innovative, industry-leading UI interactions",
+  //       "Invents new techniques to responsibly stretch limits of the Android platform",
+  //     ],
+  //     "examples": [
+  //       "Defined and drove complete migration plan to Swift or Kotlin",
+  //       "Implemented Android recycler views before platform support existed",
+  //       "Pioneered application-level abstractions for multi-app environment",
+  //     ],
+  //   }],
+  // },
+    "ML": {
+    "displayName": "Machine Learning",
     "category": "A",
-    "description": "Develops expertise in native mobile platform engineering, such as iOS or Android",
+    "description": "Insert description",
     "milestones": [{
-      "summary": "Works effectively within established iOS or Android architectures, following current best practices",
+      "summary": "Milestone 1",
       "signals": [
-        "Delivers features requiring simple local modifications",
-        "Adds simple actions that call server endpoints",
-        "Reuses existing components appropriately",
+        "A",
+        "B",
+        "C",
       ],
       "examples": [
-        "Added existing button to a different iOS surface",
-        "Add follow button for publications on Android",
-        "Fetched and displayed a new stream, using existing stream item styles",
+        "A",
+        "B",
+        "C",
       ],
     }, {
-      "summary": "Develops new instances of existing architecture, or minor improvements to existing architecture",
+      "summary": "Milestone 2",
       "signals": [
-        "Defines new useful and appropriate proto-generated objects",
-        "Creates simple new activities on Android",
-        "Migrates code from old patterns to new patterns",
+        "A",
+        "B",
+        "C",
       ],
       "examples": [
-        "Upgraded SDWebImage to a new major version",
-        "Added support for rendering a new type of stream item",
-        "Prototyped a simple new feature quickly",
+        "A",
+        "B",
+        "C",
       ],
     }, {
-      "summary": "Designs major new features and demonstrates a nuanced understanding of mobile platform constraints",
+      "summary": "Milestone 3",
       "signals": [
-        "Implements complex features with a large product surface area",
-        "Works effectively with  Android reactive programming framework",
-        "Adds support for new iOS features after a major iOS version upgrade",
+        "A",
+        "B",
+        "C",
       ],
       "examples": [
-        "Designed iOS caching strategy for offline reading",
-        "Built series reader on Android",
-        "Informed the team about recent best practice changes and deprecations",
+        "A",
+        "B",
+        "C",
       ],
     }, {
-      "summary": "Builds complex, reusable architectures that pioneer best practices and enable engineers to work more effectively",
+      "summary": "Milestone 4",
       "signals": [
-        "Pioneers architecture migration strategies that reduce programmer burden",
-        "Fixes subtle memory management issues",
-        "Implements interactive dismissals that bring delight",
+        "A",
+        "B",
+        "C",
       ],
       "examples": [
-        "Upgraded CocoaPods to a new major version",
-        "Designed architecture for fetching and rendering stream items",
-        "Migrated Android persistance layer to reactive programming",
+        "A",
+        "B",
+        "C",
       ],
     }, {
-      "summary": "Is an industry-leading expert in mobile engineering or sets strategic mobile direction for an eng team",
+      "summary": "Milestone 5",
       "signals": [
-        "Defines long-term goals and ensures active projects are in service of them",
-        "Designs and builds innovative, industry-leading UI interactions",
-        "Invents new techniques to responsibly stretch limits of the Android platform",
+        "A",
+        "B",
+        "C",
       ],
       "examples": [
-        "Defined and drove complete migration plan to Swift or Kotlin",
-        "Implemented Android recycler views before platform support existed",
-        "Pioneered application-level abstractions for multi-app environment",
+        "A",
+        "B",
+        "C",
       ],
     }],
   },

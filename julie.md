@@ -3,7 +3,7 @@
 ## Career paths
 Tech Lead
 Tech Product Manager / PM
-People manager
+People manager / Team Lead
 
 ## Tracks
 ### Category: Building / Designing
@@ -22,7 +22,7 @@ ie. test component code in an isolated environment, leverage Storybook to assist
 > Project management, communication, craft, initiative
 
 ex. 
-Track tile: Craft
+Track title: Craft
 Track description: Embodies and promotes practices to ensure excellent quality products and services.
 Milestone description: Delivers consistently good quality work
 Example Tasks:
